@@ -1,6 +1,40 @@
-# TempProject
+# Proyecto Segundo Parcial
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
+Este es un proyecto Angular desarrollado para el segundo parcial de la materia de Tecnología de Internet.
+
+## Tecnologías Utilizadas
+
+- **Angular 20.3.1** - Framework principal
+- **Bootstrap 5** - Framework CSS para diseño responsivo y componentes UI
+- **TypeScript** - Lenguaje de programación
+- **Node.js** - Entorno de ejecución
+
+## Framework CSS Elegido: Bootstrap
+
+Este proyecto utiliza **Bootstrap 5** como framework CSS principal. Bootstrap proporciona:
+
+- Sistema de grid responsivo
+- Componentes UI predefinidos (botones, cards, formularios, etc.)
+- Utilidades de espaciado y tipografía
+- Diseño mobile-first
+- Temas y personalización
+
+### Instalación de Bootstrap
+
+Bootstrap fue instalado mediante npm y configurado en `angular.json`:
+
+```bash
+npm install bootstrap
+```
+
+La configuración se encuentra en el archivo `angular.json` en la sección de estilos:
+
+```json
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+]
+```
 
 ## Development server
 
