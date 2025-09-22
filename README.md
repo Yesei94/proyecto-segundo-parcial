@@ -36,6 +36,47 @@ La configuración se encuentra en el archivo `angular.json` en la sección de es
 ]
 ```
 
+## Template Utilizado
+
+Este proyecto utiliza el template **"Agency"** de Start Bootstrap, un template profesional y responsivo para sitios web corporativos.
+
+### Fuente del Template
+
+- **Template**: [Start Bootstrap Agency](https://startbootstrap.com/theme/agency)
+- **Demo**: [https://startbootstrap.github.io/startbootstrap-agency/](https://startbootstrap.github.io/startbootstrap-agency/)
+- **Repositorio**: [https://github.com/StartBootstrap/startbootstrap-agency](https://github.com/StartBootstrap/startbootstrap-agency)
+- **Versión**: 7.0.6
+- **Licencia**: [MIT License](https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+
+### Características del Template
+
+- **Diseño responsivo** con Bootstrap 5
+- **Navegación fija** con scroll suave
+- **Secciones incluidas**: Hero, Servicios, Portfolio, About, Team, Contacto
+- **Optimizado para SEO** y rendimiento
+- **Compatible con PWA** (futura implementación)
+
+### Fuentes y Recursos Externos
+
+- **Bootstrap 5.3.0** - Framework CSS principal
+  - Fuente: [Bootstrap Official](https://getbootstrap.com/)
+  - Licencia: MIT License
+
+- **Font Awesome 6.0.0** - Iconografía
+  - Fuente: [Font Awesome](https://fontawesome.com/)
+  - Licencia: Free License
+
+- **Google Fonts** - Tipografía
+  - Fuente: [Google Fonts](https://fonts.google.com/)
+  - Licencia: Open Font License
+
+### Licencias
+
+- **Start Bootstrap Agency**: MIT License - Permite uso comercial y modificación
+- **Bootstrap**: MIT License - Permite uso comercial y modificación
+- **Font Awesome**: Free License - Uso gratuito con atribución
+- **Google Fonts**: Open Font License - Uso gratuito
+
 ## Development server
 
 To start a local development server, run:

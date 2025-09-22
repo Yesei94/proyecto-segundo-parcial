@@ -1,0 +1,316 @@
+/*!
+ * Start Bootstrap - Agency v7.0.6 (https://startbootstrap.com/theme/agency)
+ * Copyright 2013-2023 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+ */
+
+/* Global Styles */
+body {
+  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #212529 !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fed136 !important;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: 400;
+  padding: 0.75rem 0;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #fed136 !important;
+}
+
+/* Masthead */
+.masthead {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+}
+
+.masthead h1 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.masthead .subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #fed136;
+  border-color: #fed136;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-primary:hover {
+  background-color: #fec810;
+  border-color: #fec810;
+  color: #000;
+}
+
+/* Services */
+.service-icon {
+  background-color: #fed136;
+  color: #fff;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio */
+.portfolio-item {
+  cursor: pointer;
+}
+
+.portfolio-caption {
+  background-color: #fed136;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.portfolio-caption h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.portfolio-caption p {
+  font-style: italic;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* About */
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: '';
+  background-color: #e9ecef;
+}
+
+.timeline > li {
+  position: relative;
+  margin-bottom: 50px;
+  min-height: 50px;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: '';
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li .timeline-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.timeline > li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  border: 3px solid #e9ecef;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #fed136;
+}
+
+.timeline > li .timeline-image h4 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+/* Team */
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.team-member p {
+  margin-top: 0;
+}
+
+/* Contact */
+.contact-section {
+  background-color: #212529;
+  background-image: url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-section .section-heading {
+  color: #fff;
+}
+
+.contact-section .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+  padding: 1.25rem;
+}
+
+.contact-section .form-group input.form-control {
+  height: auto;
+}
+
+.contact-section .form-group textarea.form-control {
+  height: 10rem;
+}
+
+.contact-section .form-group-textarea {
+  height: 100%;
+}
+
+.contact-section .form-group-textarea textarea {
+  height: 100%;
+  min-height: 10rem;
+}
+
+.contact-section p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Footer */
+.footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer .social-buttons a {
+  display: inline-block;
+  background-color: #fed136;
+  color: #000;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer .social-buttons a:hover {
+  background-color: #fec810;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .masthead {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  
+  .masthead h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  
+  .masthead .subheading {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+  
+  .timeline > li .timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+}
