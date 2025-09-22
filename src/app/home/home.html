@@ -25,6 +25,37 @@
     <div class="masthead-subheading">¡Bienvenido a nuestro proyecto!</div>
     <div class="masthead-heading text-uppercase">Es un placer conocerte</div>
     <a class="btn btn-primary btn-xl text-uppercase" href="#services">Cuéntame más</a>
+    
+    <!-- Botones de Notificaciones PWA -->
+    <div class="mt-4">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <button 
+            class="btn btn-success btn-lg me-2" 
+            (click)="requestNotificationPermission()"
+            [disabled]="isPermissionGranted()"
+            aria-label="Solicitar permiso para mostrar notificaciones">
+            <i class="fas fa-bell me-2"></i>
+            Permitir notificaciones
+          </button>
+        </div>
+        <div class="col-auto">
+          <button 
+            class="btn btn-warning btn-lg" 
+            (click)="testNotification()"
+            [disabled]="!isPermissionGranted()"
+            aria-label="Probar notificación de demostración">
+            <i class="fas fa-paper-plane me-2"></i>
+            Probar notificación
+          </button>
+        </div>
+      </div>
+      <div class="mt-3">
+        <small class="text-light" *ngIf="notificationStatus">
+          Estado: <span class="badge" [ngClass]="getStatusBadgeClass()">{{ notificationStatus }}</span>
+        </small>
+      </div>
+    </div>
   </div>
 </header>
 
