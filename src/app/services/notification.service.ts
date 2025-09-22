@@ -70,19 +70,7 @@ export class NotificationService {
         icon,
         badge: '/favicon.ico',
         tag: 'pwa-notification',
-        requireInteraction: true,
-        actions: [
-          {
-            action: 'view',
-            title: 'Ver',
-            icon: '/favicon.ico'
-          },
-          {
-            action: 'close',
-            title: 'Cerrar',
-            icon: '/favicon.ico'
-          }
-        ]
+        requireInteraction: true
       });
 
       // Manejar clics en la notificación

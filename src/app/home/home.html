@@ -33,7 +33,7 @@
           <button 
             class="btn btn-success btn-lg me-2" 
             (click)="requestNotificationPermission()"
-            [disabled]="isPermissionGranted()"
+            [disabled]="isPermissionGranted"
             aria-label="Solicitar permiso para mostrar notificaciones">
             <i class="fas fa-bell me-2"></i>
             Permitir notificaciones
@@ -43,7 +43,7 @@
           <button 
             class="btn btn-warning btn-lg" 
             (click)="testNotification()"
-            [disabled]="!isPermissionGranted()"
+            [disabled]="!isPermissionGranted"
             aria-label="Probar notificación de demostración">
             <i class="fas fa-paper-plane me-2"></i>
             Probar notificación
