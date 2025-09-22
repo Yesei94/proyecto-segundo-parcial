@@ -1,5 +1,31 @@
 <!-- UI Components Demo Page -->
 <div class="container-fluid p-0">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <i class="fas fa-home me-2"></i>Proyecto Angular
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#uiNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="uiNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="fas fa-home me-1"></i>Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/ui" aria-current="page">
+              <i class="fas fa-code me-1"></i>UI Demo
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- Page Header -->
   <section class="py-5 bg-primary text-white">
     <div class="container text-center">
@@ -14,7 +40,7 @@
     <div class="row">
       <div class="col-12">
         <h2 class="section-heading text-uppercase mb-4">1. Grid & Cards Component</h2>
-        <p class="text-muted mb-4">Sistema de grid responsivo con cards del template</p>
+        <p class="text-muted mb-4">Sistema de grid responsivo con cards del template Agency</p>
       </div>
     </div>
     
@@ -23,12 +49,12 @@
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body text-center">
-            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-              <i class="fas fa-laptop fa-lg"></i>
+            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;" role="img" aria-label="Icono de laptop para diseño web">
+              <i class="fas fa-laptop fa-lg" aria-hidden="true"></i>
             </div>
             <h5 class="card-title">Diseño Web</h5>
             <p class="card-text">Creación de sitios web modernos y responsivos utilizando las últimas tecnologías.</p>
-            <a href="#" class="btn btn-primary">Ver más</a>
+            <a href="#" class="btn btn-primary" aria-label="Ver más información sobre diseño web">Ver más</a>
           </div>
         </div>
       </div>
@@ -36,12 +62,12 @@
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body text-center">
-            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-              <i class="fas fa-mobile-alt fa-lg"></i>
+            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;" role="img" aria-label="Icono de móvil para aplicaciones móviles">
+              <i class="fas fa-mobile-alt fa-lg" aria-hidden="true"></i>
             </div>
             <h5 class="card-title">Apps Móviles</h5>
             <p class="card-text">Desarrollo de aplicaciones móviles nativas e híbridas para iOS y Android.</p>
-            <a href="#" class="btn btn-success">Ver más</a>
+            <a href="#" class="btn btn-success" aria-label="Ver más información sobre aplicaciones móviles">Ver más</a>
           </div>
         </div>
       </div>
@@ -49,12 +75,12 @@
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body text-center">
-            <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-              <i class="fas fa-chart-line fa-lg"></i>
+            <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;" role="img" aria-label="Icono de gráfico para marketing digital">
+              <i class="fas fa-chart-line fa-lg" aria-hidden="true"></i>
             </div>
             <h5 class="card-title">Marketing Digital</h5>
             <p class="card-text">Estrategias de marketing digital para aumentar la visibilidad de tu negocio.</p>
-            <a href="#" class="btn btn-warning">Ver más</a>
+            <a href="#" class="btn btn-warning" aria-label="Ver más información sobre marketing digital">Ver más</a>
           </div>
         </div>
       </div>
@@ -76,15 +102,15 @@
     <div class="row mb-4">
       <div class="col-12">
         <h3 class="h5 mb-3">Estilos de Botones</h3>
-        <div class="d-flex flex-wrap gap-3 mb-4">
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-secondary">Secondary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-light">Light</button>
-          <button type="button" class="btn btn-dark">Dark</button>
+        <div class="d-flex flex-wrap gap-3 mb-4" role="group" aria-label="Botones de diferentes estilos">
+          <button type="button" class="btn btn-primary" aria-label="Botón primario">Primary</button>
+          <button type="button" class="btn btn-secondary" aria-label="Botón secundario">Secondary</button>
+          <button type="button" class="btn btn-success" aria-label="Botón de éxito">Success</button>
+          <button type="button" class="btn btn-danger" aria-label="Botón de peligro">Danger</button>
+          <button type="button" class="btn btn-warning" aria-label="Botón de advertencia">Warning</button>
+          <button type="button" class="btn btn-info" aria-label="Botón informativo">Info</button>
+          <button type="button" class="btn btn-light" aria-label="Botón claro">Light</button>
+          <button type="button" class="btn btn-dark" aria-label="Botón oscuro">Dark</button>
         </div>
       </div>
     </div>
@@ -131,31 +157,37 @@
     
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <form>
+        <form role="form" aria-label="Formulario de contacto de demostración">
           <div class="row">
             <div class="col-md-6 mb-3">
-              <label for="firstName" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="firstName" required>
+              <label for="firstName" class="form-label">Nombre *</label>
+              <input type="text" class="form-control" id="firstName" required aria-describedby="firstNameHelp">
+              <div id="firstNameHelp" class="form-text">Ingresa tu nombre completo</div>
             </div>
             <div class="col-md-6 mb-3">
-              <label for="lastName" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="lastName" required>
+              <label for="lastName" class="form-label">Apellido *</label>
+              <input type="text" class="form-control" id="lastName" required aria-describedby="lastNameHelp">
+              <div id="lastNameHelp" class="form-text">Ingresa tu apellido</div>
             </div>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required>
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" class="form-control" id="email" required aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Ingresa tu dirección de correo electrónico</div>
           </div>
           <div class="mb-3">
             <label for="phone" class="form-label">Teléfono</label>
-            <input type="tel" class="form-control" id="phone">
+            <input type="tel" class="form-control" id="phone" aria-describedby="phoneHelp">
+            <div id="phoneHelp" class="form-text">Número de teléfono (opcional)</div>
           </div>
           <div class="mb-3">
-            <label for="message" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="message" rows="4" required></textarea>
+            <label for="message" class="form-label">Mensaje *</label>
+            <textarea class="form-control" id="message" rows="4" required aria-describedby="messageHelp"></textarea>
+            <div id="messageHelp" class="form-text">Describe tu consulta o mensaje</div>
           </div>
           <div class="text-center">
-            <button type="submit" class="btn btn-primary btn-xl text-uppercase">Enviar Mensaje</button>
+            <button type="submit" class="btn btn-primary btn-xl text-uppercase" aria-describedby="submitHelp">Enviar Mensaje</button>
+            <div id="submitHelp" class="form-text mt-2">Al enviar, aceptas nuestros términos de servicio</div>
           </div>
         </form>
       </div>
